@@ -1,0 +1,32 @@
+.edit-user {
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  float: none;
+}
+.edit-user form {
+  text-align: center;
+  width: 100%;
+}
+.edit-user form .form-group {
+  margin-bottom: 20px;
+}
+.edit-user form .helper-block {
+  color: #dc3545;
+  font-size: 80%;
+}
+.edit-user form .has-error {
+  border: 1px solid #dc3545;
+}
+.edit-user form .edit-btn {
+  background-color: #0D853D;
+  color: #FFF;
+  opacity: 0.6;
+}
+.edit-user form .edit-btn:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+/*# sourceMappingURL=EditUser.css.map */

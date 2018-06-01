@@ -1,0 +1,46 @@
+$mainGreen: #0D853D;
+$dangerRed: #dc3545;
+
+.login {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    form {
+        width: 100%;
+        input {
+            margin-bottom: 20px;
+        }
+        .login-button {
+            display: block;
+            width: 100%;
+            background-color: #FFF;
+            text-transform: uppercase;
+            border: 1px solid $mainGreen;
+            border-radius: 10px;
+            color: $mainGreen;
+            opacity: 0.7;
+            font-weight: bold;
+            &:hover {
+                opacity: 1;
+                transition: opacity .3s ease-in;
+            }
+        }
+        .helper-block {
+            color: $dangerRed;
+            font-weight: bold;
+        }
+        .has-error {
+            border: 2px solid $dangerRed;
+        }
+        .reset-password {
+            color: #FFF;
+            display: block;
+            text-align: center;
+        }
+    }
+}

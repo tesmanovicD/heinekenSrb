@@ -1,0 +1,33 @@
+$mainGreen: #0D853D;
+$dangerRed: #dc3545;
+
+.edit-user {
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    form {
+        text-align: center;
+        width: 100%;
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .helper-block {
+            color: $dangerRed;
+            font-size: 80%;
+        }
+        .has-error {
+            border: 1px solid $dangerRed;
+        }
+        .edit-btn {
+            background-color: $mainGreen;
+            color: #FFF;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+                transition: opacity .3s ease-out;
+            }
+        }
+    }
+}

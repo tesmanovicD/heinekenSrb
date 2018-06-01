@@ -1,0 +1,38 @@
+.add-user {
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  float: none;
+}
+.add-user form {
+  text-align: center;
+  width: 100%;
+}
+.add-user form .form-group {
+  margin-bottom: 20px;
+}
+.add-user form .has-error {
+  border: 1px solid #dc3545;
+}
+.add-user form .helper-block {
+  font-size: 80%;
+  color: #dc3545;
+}
+.add-user form .add-avatar {
+  overflow: hidden;
+}
+.add-user form .add-avatar button {
+  float: right;
+}
+.add-user form .add-btn {
+  background-color: #0D853D;
+  color: #FFF;
+  opacity: 0.6;
+}
+.add-user form .add-btn:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+/*# sourceMappingURL=AddUser.css.map */

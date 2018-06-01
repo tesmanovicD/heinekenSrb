@@ -1,0 +1,7 @@
+[
+    {"id": 0, "ime": "ADMIN", "prezime": "ADMINISTRATOR", "email": "super@super.com", "telefon": 252252, "password": "testuser"},
+    {"id": 1, "ime": "Marko", "prezime": "Petrovic", "email": "amre@super.com", "telefon": 12252, "password": "testuser"},
+    {"id": 2, "ime": "Janos", "prezime": "Bagi", "email": "janos@super.com", "telefon": 32252, "password": "testuser"},
+    {"id": 3, "ime": "Leon", "prezime": "Rogic", "email": "leon@super.com", "telefon": 252432, "password": "testuser"}
+    
+]

@@ -1,0 +1,36 @@
+$mainGreen: #0D853D;
+$lightGray: #D3D3D3;
+
+.user-table tr {
+    text-align: center;
+    border: 2px solid $lightGray;
+    border-bottom-left-radius: 20px;
+    &:first-child {
+        border: 0px;
+    }
+    th {
+        border: 0px;
+        text-transform: uppercase;
+        color: $mainGreen;
+    }
+    
+}
+
+.add-btn {
+    background-color: $mainGreen;    
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0px;
+    a {
+        color: #FFF;
+        &:hover {
+            text-decoration: none;
+            color: unset;
+        }
+    }
+    
+}

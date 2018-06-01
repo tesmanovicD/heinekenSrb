@@ -1,0 +1,13 @@
+.options {
+  color: #0D853D;
+}
+.options:hover {
+  cursor: pointer;
+  color: #0D853D;
+}
+
+.edit-btn {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=UsersList.css.map */

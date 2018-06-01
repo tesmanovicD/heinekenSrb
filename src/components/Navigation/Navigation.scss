@@ -1,0 +1,165 @@
+$mainGreen: #0D853D;
+$bp_mobile: 350px;
+$bp_tablet: 768px;
+
+main {
+    background-image: unset;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    @media only screen and (min-width: $bp_tablet) {
+        flex-flow: unset;
+    }
+}
+
+.header-options {
+    width: 100%;
+    display: flex;
+    display: block;    
+    @media only screen and (min-width: $bp_tablet) {
+        display: flex;
+        flex-direction: row-reverse;        
+    }
+}
+
+.header {
+    border-bottom: 1px solid $mainGreen;
+    padding: 20px 0px;
+    margin: 0px 0px 20px 0px;
+    .menu {
+        clear: both;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        margin: 10px 0px 0px 0px;
+        @media only screen and (min-width: $bp_tablet) {
+            display: inline;
+            max-height: none;
+            padding: 5px;
+            margin: 0px;
+        }
+        a {
+            display: block;
+            margin-right: 5px;
+            color: $mainGreen;
+            padding: 8px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            &:hover {
+                background-color: $mainGreen;
+                color: #FFF;
+                text-decoration: none;
+                transition: background-color .5s ease-out;
+                transition: color .5s ease-out;                
+            }
+            @media only screen and (min-width: $bp_tablet) {
+                display: inline;
+            }
+        }
+        .active {
+            background-color: $mainGreen;
+            color: #fff;
+        }
+        
+    }
+    .login-button {
+        color: #FFF;
+    }
+    .site-logo {
+        width: 80px;
+        height: auto;
+        margin: 0px 20px 20px;
+    }
+    .user-settings {    
+        list-style: none;
+        display: inline;
+        @media only screen and (min-width: $bp_tablet) {
+            float: none;
+            margin: 0px;
+            padding: 5px;
+        }
+        li {
+            a {
+                color: $mainGreen;
+            }
+            margin: 0px 15px 0px 0px;
+            color: $mainGreen;
+            display: inline;
+            &:hover {
+                cursor: pointer;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    float: right;
+    margin: 10px 20px;
+    position: relative;
+    user-select: none;
+    @media only screen and (min-width: $bp_tablet) {
+      display: none;
+    }
+}
+
+.navicon {
+    background: $mainGreen;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+  
+    &:before {
+      top: 5px;
+    }
+  
+    &:after {
+      top: -5px;
+    }
+  
+    &:after,
+    &:before {
+      background: $mainGreen;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+}
+
+.menu-btn {
+    display: none;
+  
+    &:checked ~ .header-options .menu {
+      max-height: 240px;
+    }
+  
+    &:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+  
+    &:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+  
+    &:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+  
+    &:checked ~ .menu-icon:not(.steps) .navicon:after,
+    &:checked ~ .menu-icon:not(.steps) .navicon:before {
+      top: 0;
+    }
+  }

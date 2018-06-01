@@ -1,0 +1,39 @@
+$mainGreen: #0D853D;
+$bp_mobile: 350px;
+$bp_tablet: 768px;
+
+.user-details {
+    ul {
+        margin: 10%;
+        padding: 0px;
+        width: 100%;
+        list-style-type: none;
+        li {
+            display: block;
+            h5 {
+                display: inline-block;
+                margin: 0px 10px 0px 0px;
+                font-size: 18px;
+                color: $mainGreen;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .user-name {
+            font-size: 30px;
+            border-bottom: 2px solid #888;
+            margin: 0px 0px 10px 0px;
+            color: $mainGreen;
+            &:first-letter {
+                font-size: 300%;
+                color: $mainGreen;
+                text-transform: uppercase;
+            }
+            img {
+                float: right;
+                width: 120px;
+            }
+        }
+    }
+}

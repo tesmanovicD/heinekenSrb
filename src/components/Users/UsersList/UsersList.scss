@@ -1,0 +1,13 @@
+$mainGreen: #0D853D;
+
+.options {
+    color: $mainGreen;
+    &:hover {
+        cursor: pointer;
+        color: $mainGreen;
+    }
+}
+
+.edit-btn {
+    margin-right: 10px;
+}

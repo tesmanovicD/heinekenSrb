@@ -1,0 +1,35 @@
+.user-details ul {
+  margin: 10%;
+  padding: 0px;
+  width: 100%;
+  list-style-type: none;
+}
+.user-details ul li {
+  display: block;
+}
+.user-details ul li h5 {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+  font-size: 18px;
+  color: #0D853D;
+}
+.user-details ul li span {
+  font-weight: bold;
+}
+.user-details ul .user-name {
+  font-size: 30px;
+  border-bottom: 2px solid #888;
+  margin: 0px 0px 10px 0px;
+  color: #0D853D;
+}
+.user-details ul .user-name:first-letter {
+  font-size: 300%;
+  color: #0D853D;
+  text-transform: uppercase;
+}
+.user-details ul .user-name img {
+  float: right;
+  width: 120px;
+}
+
+/*# sourceMappingURL=UserProfile.css.map */

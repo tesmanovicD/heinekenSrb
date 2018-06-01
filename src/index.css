@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  height: 100%;
+  overflow: auto;
+}
+
+.login-page {
+  overflow: auto;
+  height: 100%;
+  background-image: url(./assets/heineken_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  overflow: auto;
+}

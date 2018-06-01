@@ -1,0 +1,33 @@
+.user-table tr {
+  text-align: center;
+  border: 2px solid #D3D3D3;
+  border-bottom-left-radius: 20px;
+}
+.user-table tr:first-child {
+  border: 0px;
+}
+.user-table tr th {
+  border: 0px;
+  text-transform: uppercase;
+  color: #0D853D;
+}
+
+.add-btn {
+  background-color: #0D853D;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFF;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 0px;
+}
+.add-btn a {
+  color: #FFF;
+}
+.add-btn a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+/*# sourceMappingURL=UserPreview.css.map */

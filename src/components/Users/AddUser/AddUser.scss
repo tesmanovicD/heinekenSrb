@@ -1,0 +1,39 @@
+$mainGreen: #0D853D;
+$dangerRed: #dc3545;
+
+.add-user {
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    form {
+        text-align: center;
+        width: 100%;
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .has-error {
+            border: 1px solid $dangerRed;
+        }
+        .helper-block {
+            font-size: 80%;
+            color: $dangerRed;
+        }
+        .add-avatar {
+            overflow: hidden;
+            button {
+                float: right;
+            }
+        }
+        .add-btn {
+            background-color: $mainGreen;
+            color: #FFF;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+                transition: opacity .3s ease-out;
+            }
+        }
+    }
+}
